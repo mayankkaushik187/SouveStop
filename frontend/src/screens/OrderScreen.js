@@ -32,7 +32,7 @@ const OrderScreen = ({ match }) => {
         if (!order || order._id !== orderId) {
             dispatch(getOrderDetails(orderId))
         }
-    }, [order, orderId])
+    }, [dispatch, orderId])
 
     return loading ? (
         <Loader />
