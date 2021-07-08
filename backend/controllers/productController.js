@@ -1,3 +1,4 @@
+import e from "express"
 import asyncHandler from "express-async-handler"
 import Product from "../models/productModel.js"
 // @desc Fetch all products
@@ -51,7 +52,7 @@ const createProduct = asyncHandler(async (req, res) => {
         description: "Sample desc",
     })
     const createdProduct = await product.save()
-    res.status(201).json(product)
+    res.status(201).json(createdProduct)
 })
 
 // @desc Update single product
@@ -64,13 +65,26 @@ const updateProduct = asyncHandler(async (req, res) => {
     const product = await Product.findById(req.params.id)
 
     if (product) {
+        product.name = name
+        product.price = price
+        product.description = description
+        product.image = image
+        product.brand = brand
+        product.category = category
+        product.countInStock = countInStock
+
+        const updatedProduct = await product.save()
+        res.json(updatedProduct)
     } else {
         res.status(401)
         throw new Error("Product Not Found")
     }
-
-    const createdProduct = await product.save()
-    res.status(201).json(product)
 })
 
-export { getProductById, getProducts, deleteProduct }
+export {
+    getProductById,
+    getProducts,
+    deleteProduct,
+    updateProduct,
+    createProduct,
+}
