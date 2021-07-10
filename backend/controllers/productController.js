@@ -46,10 +46,10 @@ const createProduct = asyncHandler(async (req, res) => {
         user: req.user._id,
         image: "/images/sample.jpg",
         brand: "Sample Brand",
-        category: "Sampole Category",
+        category: "Sample Category",
         countInStock: 0,
         numReviews: 0,
-        description: "Sample desc",
+        description: "Sample description",
     })
     const createdProduct = await product.save()
     res.status(201).json(createdProduct)
