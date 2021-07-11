@@ -169,8 +169,8 @@ export const createProductReview =
                     Authorization: `Bearer ${userInfo.token}`,
                 },
             }
-            const { data } = await axios.post(
-                `/api/products/${productId}`,
+            await axios.post(
+                `/api/products/${productId}/reviews`,
                 review,
                 config
             )
