@@ -15,8 +15,9 @@ const router = express.Router()
 // @routes GET /api/products
 // @access PUBLIC
 router.route("/").get(getProducts).post(protect, admin, createProduct)
+// router.get("/top", getTopProducts)
 router.route("/:id/reviews").post(protect, createProductReview)
-router.get("/", getTopProducts)
+router.get("/top", getTopProducts)
 
 // @desc Fetch single product
 // @routes GET /api/products/:id
