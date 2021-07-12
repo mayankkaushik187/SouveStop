@@ -13,9 +13,8 @@ const Meta = ({ title, description, keywords }) => {
 
 Meta.defaultProps = {
     title: "Welcome To SouveStop",
-    keywords: "Souvenirs of your favourite artists and influencers",
-    description:
-        "We sell the most genuine souvenirs of your favourite artist at the best price!",
+    keywords: "Buy cheap products, electronics and gadgets!",
+    description: "We sell the most genuine products at the best prices!",
 }
 
 export default Meta
