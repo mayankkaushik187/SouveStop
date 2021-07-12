@@ -1,7 +1,7 @@
-# E-Commerce-
+# SouveStop
 
 ## This project was built for learning purposes!!
-## It is a E-Commerce Website called SouveStop
+## It is an E-Commerce Website called SouveStop
 
 
 # Getting Started with Create React App
