@@ -3,6 +3,8 @@
 ## This project was built for learning purposes!!
 ## It is an E-Commerce Website called SouveStop
 
+<img src="https://user-images.githubusercontent.com/77916822/127804265-7dfd07b8-4edf-47d5-a438-ac63cd52325a.png" width="30%"></img> <img src="https://user-images.githubusercontent.com/77916822/127804269-f3975515-634d-4b3c-a14b-f78cde298eb5.png" width="30%"></img> <img src="https://user-images.githubusercontent.com/77916822/127804270-4d1fb5d7-7c87-40ee-a134-17fae5374170.png" width="30%"></img> 
+
 ### Here is the link to the deployed website ==>  [Click me!!](https://souvestop.herokuapp.com/)
 
 
